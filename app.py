@@ -11,6 +11,7 @@ spell = SpellChecker(language='ar')
 def check_spelling(text):
     words = simple_word_tokenize(text)  
     misspelled = spell.unknown(words)
+    
     corrections = {}
 
 
