@@ -105,7 +105,10 @@
 
       document.getElementById('result').innerHTML = highlightedText;
       document.getElementById('suggestions').innerHTML = suggestionHTML;
-    }    function replaceWord(misspelledWord, correctWord) {
+    }    
+    
+    
+    function replaceWord(misspelledWord, correctWord) {
       let sentence = document.getElementById('sentence').value;
   
       sentence = sentence.replace(misspelledWord, correctWord);

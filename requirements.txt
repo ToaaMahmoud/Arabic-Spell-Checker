@@ -1,0 +1,3 @@
+flask
+pyspellchecker
+camel-tools

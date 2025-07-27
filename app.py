@@ -24,6 +24,7 @@ def check_spelling(text):
 def index():
     return render_template('index.html')
 
+
 @app.route('/check_spelling', methods=['POST'])
 def check_spelling_api():
     text = request.json.get('text', '')
@@ -31,4 +32,4 @@ def check_spelling_api():
     return jsonify(suggestions)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
